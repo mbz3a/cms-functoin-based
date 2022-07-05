@@ -1,0 +1,43 @@
+.wrapper{
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    .topmenu{
+        width: 100%;
+        float: right;
+        height: 50px;
+        background:  #095841;
+    }
+    .menu{
+        float: right;
+        width: 25%;
+        height:calc(100vh - 50px);
+        background: #11976f;
+        user-select: none;
+        text-align: right ;
+        a{width: 100%;}
+        .menu_item{
+            cursor: pointer;
+            width: 100%;
+            padding: 15px 30px;
+            &:hover{
+                background-color:#13795a ;
+            }
+            .menu-sub-menus{
+                display: none;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    display: block;
+                    margin: 10px 0;
+                    width: 100%;
+                    &:hover{
+                        background: #0c9169;
+                    }
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,24 @@
+@import "./roots";
+@import "./mixins";
+@import "./components";
+@import "./layouts";
+@import "./admin/_menu";
+@import "./index/cmsindex";
+@import "contactus";
+
+
+.content{
+    float: right;
+    width: 75%;
+    height: auto;
+    background: rgb(189, 189, 189);
+}
+.flex-show{
+    display: flex ;
+}
+.display-none{
+    display: none;
+}
+.show{
+    display: block !important ; 
+}

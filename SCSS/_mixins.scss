@@ -1,0 +1,17 @@
+@mixin flex($flexflow,$j_c,$a_item,$a_con){
+    display: flex;
+    flex-flow: $flexflow;
+    justify-content:$j_c ;
+    align-items:$a_item ;
+    align-content:$a_con ;
+}
+
+@mixin modal_box_structure($width, $height  , $bg ){
+    width:$width;
+    height:$height;
+    background:$bg;
+}
+@mixin scrolling(){
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}

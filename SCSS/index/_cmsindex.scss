@@ -1,0 +1,45 @@
+nav{
+    width: 100%;
+    height:60px;
+    position: sticky;
+    z-index: 100;
+    background: #12edca;
+    .menumain{
+        margin-right: 50px;
+        height: 100%;
+        @include flex(row wrap,start,center,center);
+        // display: block;
+    }
+    .menumain li{
+        width: 150px;
+        height: 60px;
+        list-style: none;
+        display: inline-block;
+        &:hover{
+            background-color: #13bbd1
+        }
+        a{
+            @include flex(column wrap,center,center,center);
+            width: 100%;
+            height: 60px;
+        }
+        &:hover  .dropdown_menu{
+            display: block;
+        }
+        .dropdown_menu{
+            display: none;
+            width: 100%;
+            margin-top: 2px;
+            background: #13bbd1;
+            border-radius: 10px;
+        }
+        .dropdown_menu li{
+            width: 100%;
+            height: 50px;
+            &:hover{
+                border-radius: 10px;
+                background: #13bbd1;
+            }
+        }
+    }
+}
